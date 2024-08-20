@@ -31,6 +31,7 @@ int main(void)
 		if (strncmp(input_buffer, "env", 3) == 0)
 		{
 			print_env();
+				continue;
 		}
 		else if (strncmp(input_buffer, "exit", 4) == 0)
 		{
@@ -43,7 +44,6 @@ int main(void)
 		free(myargv);
 
 	} while (1);
-
 	free(input_buffer);
 	return (ret);
 }

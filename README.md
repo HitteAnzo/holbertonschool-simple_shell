@@ -50,27 +50,27 @@ To compile and run this shell, you need:
 You can run the shell in two modes:
 
 ### Interactive Mode
-    ```bash
-    ./simple_shell
-    ```
+   ```bash
+   ./simple_shell
+   ```
 
 You should see a prompt where you can type commands:
 
-    ```sh
-    $ ./simple_shell
-    $ ls -l
-    total 48
-    -rw-r--r-- 1 user user  1373 Aug 20 10:10 README.md
-    -rwxr-xr-x 1 user user 14832 Aug 20 10:10 simple_shell
-    ```
+   ```sh
+   $ ./simple_shell
+   $ ls -l
+   total 48
+   -rw-r--r-- 1 user user  1373 Aug 20 10:10 README.md
+   -rwxr-xr-x 1 user user 14832 Aug 20 10:10 simple_shell
+   ```
 
 ### Non-Interactive Mode
 
 In this mode, the shell reads commands from a file or pipe.
 
-    ```bash
-    echo "ls -l" | ./simple_shell
-    ```
+   ```bash
+   echo "ls -l" | ./simple_shell
+   ```
 
 ### Built-in Commands
 
@@ -81,12 +81,12 @@ The following built-in commands are supported:
 
 ### Exemple
 
-    ```bash
-    $ ./simple_shell
-    $ pwd
-    /home/user/holbertonschool-simple_shell
-    $ exit
-    ```
+   ```bash
+   $ ./simple_shell
+   $ pwd
+   /home/user/holbertonschool-simple_shell
+   $ exit
+   ```
 
 ### Files
 

@@ -1,0 +1,82 @@
+.TH SIMPLE_SHELL 1 "August 2024" "Version 1.0" "User Commands"
+
+.SH NAME
+simple_shell \- a simple UNIX command interpreter
+
+.SH SYNOPSIS
+.B simple_shell
+.I [options]
+
+.SH DESCRIPTION
+.B simple_shell
+is a simple implementation of a UNIX command interpreter. It reads commands from standard input and executes them. This shell supports a subset of standard shell functionalities.
+
+.PP
+.B simple_shell
+is intended for educational purposes and demonstrates the basic functionality of a shell in C.
+
+.SH OPTIONS
+.TP
+.B \-h, \-\-help
+Display this help and exit.
+
+.TP
+.B \-v, \-\-version
+Output version information and exit.
+
+.SH COMMANDS
+.B simple_shell
+supports the following built-in commands:
+.PP
+.TP
+.B exit
+Exit the shell.
+.TP
+.B env
+Print the current environment.
+.TP
+.B setenv
+Set an environment variable.
+.TP
+.B unsetenv
+Remove an environment variable.
+
+.PP
+In addition to built-in commands,
+.B simple_shell
+can execute any external program available in the system PATH.
+
+.SH USAGE
+To start the shell, simply run:
+.PP
+.EX
+$ ./simple_shell
+.EE
+
+Once the shell is running, you can type any supported command followed by pressing Enter. For example:
+.P
+.EX
+$ ls -l
+.EE
+
+.PP
+To exit the shell, use the `exit` command or press `Ctrl-D`.
+
+.SH EXIT STATUS
+The
+.B simple_shell
+returns the exit status of the last executed command or 0 if no command was executed.
+
+.SH AUTHOR
+Written by Hitte Anzo.
+
+.SH BUGS
+No known bugs at this time. If you encounter any issues, please report them to hitteanzo@gmail.com.
+
+.SH COPYRIGHT
+This is free software; you are free to modify and redistribute it under the terms of the MIT License.
+
+.SH SEE ALSO
+.BR sh(1),
+.BR bash(1),
+.BR zsh(1)

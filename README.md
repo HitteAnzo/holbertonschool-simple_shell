@@ -11,7 +11,7 @@
 ## Features
 
 - Basic command execution (with arguments)
-- Handle built-in commands: `cd`, `exit`, `env`, `setenv`, `unsetenv`
+- Handle built-in commands: `exit`, `env`, ,etc..
 - Input redirection and command pipelines
 - Custom environment management
 - Interactive and non-interactive modes
@@ -76,11 +76,8 @@ In this mode, the shell reads commands from a file or pipe.
 
 The following built-in commands are supported:
 
-- `cd` [directory]: Change the current working directory.
 - `exit` [status]: Exit the shell with an optional status.
 - `env`: Display the current environment variables.
-- `setenv` [var] [value]: Set an environment variable.
-- `unsetenv` [var]: Unset an environment variable.
 
 ### Exemple
 
@@ -88,9 +85,6 @@ The following built-in commands are supported:
     $ ./simple_shell
     $ pwd
     /home/user/holbertonschool-simple_shell
-    $ cd ..
-    $ pwd
-    /home/user
     $ exit
     ```
 

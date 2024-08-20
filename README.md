@@ -78,6 +78,7 @@ The following built-in commands are supported:
 
 - `exit` [status]: Exit the shell with an optional status.
 - `env`: Display the current environment variables.
+- `ls` : Displays the names of files and directories in the specified directory.
 
 ### Exemple
 
@@ -90,13 +91,17 @@ The following built-in commands are supported:
 
 ### Files
 
-- `main.c`: Entry point of the shell program.
-- `shell.c`: Core functions of the shell.
-- `builtin.c`: Implementation of built-in commands.
-- `env.c`: Functions related to environment variable management.
-- `parser.c`: Command line parsing and execution.
-- `README.md`: This file.
-- `man_1_simple_shell`: Manual file for the shell.
+- `_error.c`: Handles error messages and error-related functions.
+- `_getenv.c`: Implements functions to retrieve environment variables.
+- `exec_cmd.c`: Contains functions for executing commands.
+- `file_checker.c`: Checks for file existence and permissions.
+- `path_finder.c`: Finds the full path of executables.
+- `print_env.c`: Handles the printing of environment variables.
+- `shell.c`: The main file containing the shell's core logic.
+- `shell.h`: Header file with function prototypes and necessary includes.
+- `simple_shell`: The compiled executable of the simple shell program.
+- `simple_shell.1`: Man page for the simple shell, detailing its usage and features.
+- `tok_args.c`: Handles tokenization of command arguments.
 
 ### Use man in the shell
 

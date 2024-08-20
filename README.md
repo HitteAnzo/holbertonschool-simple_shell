@@ -41,9 +41,9 @@ To compile and run this shell, you need:
 
 3. Compile the program:
 
-```bash
-gcc -Wall -Werror -Wextra -pedantic *.c -o simple_shell
-```
+    ```bash
+    gcc -Wall -Werror -Wextra -pedantic *.c -o simple_shell
+    ```
 
 ## Usage
 
